@@ -45,12 +45,13 @@
     // (partendo da 1) del cognome dell'utente.
 
 
-    var arr = ['red', 'green', 'darkorange', 'violet', 'pink'];
+    var lastName =['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
 
-        var lastName = prompt('inserire il cognome');
-        arr.push(lastName);
+    var lastNameUser = prompt('inserire il cognome');
+    lastName.push(lastNameUser);    // inserimento cognome nell'array
+    lastName.sort();    // ordine alfabetico
 
-        console.log(arr);
+    console.log(lastName);  // stampa dell'array
 
 
 
