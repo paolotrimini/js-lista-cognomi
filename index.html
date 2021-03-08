@@ -45,25 +45,23 @@
     // (partendo da 1) del cognome dell'utente.
 
 
-    // VERSIONE 1
+    var lastName = ['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
 
-    var lastName =['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
-    
     var lastNameUser = prompt('inserire il cognome');
     lastName.push(lastNameUser);    // inserimento cognome nell'array
     lastName.sort();    // ordine alfabetico
     //console.log(lastName);
-    
-    var i = 0;
-    var index = 0;
-    
-    while (i < lastName.length) {
-    
-        index = i + 1;
-        console.log('posizione ' + index + ': ', lastName[i]);
-        i++;
+
+    for (var i=0; i<lastName.length; i++) {
+
+        console.log('posizione ' + (i+1) + ':', lastName[i]);
+
+        if (lastNameUser == lastName[i]) {
+
+            var poslastName = i + 1; //posizione "umana" cognome User
+        }
     }
-    console.log('STAMPA TERMINATA!');
+    console.log(lastNameUser + ' è in posizione: ' + poslastName);
 
 
 
