@@ -45,13 +45,37 @@
     // (partendo da 1) del cognome dell'utente.
 
 
+    // VERSIONE 1
+
     var lastName =['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
 
     var lastNameUser = prompt('inserire il cognome');
     lastName.push(lastNameUser);    // inserimento cognome nell'array
     lastName.sort();    // ordine alfabetico
+    //console.log(lastName);
 
-    console.log(lastName);  // stampa dell'array
+    var i = 0;
+    var index = 0;
+
+    while (i < lastName.length) {
+
+        index = i + 1;
+        i++;
+
+        console.log('posizione ' + index + ': ', lastName[i]);
+    }
+    console.log('STAMPA TERMINATA!');
+
+    // VERSIONE 2
+
+    //var lastName =['Rossi', 'Bianchi', 'Verdi', 'Gialli'];
+    //
+    //var lastNameUser = prompt('inserire il cognome');
+    //lastName.push(lastNameUser);    // inserimento cognome nell'array
+    //lastName.sort();    // ordine alfabetico
+    //
+    //console.log(lastName);  // stampa dell'array
+
 
 
 
